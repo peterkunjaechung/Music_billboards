@@ -1,0 +1,16 @@
+<h1><%= @billboard.name %></h1>
+<h4>Name: <%= @artist.name %></h4>
+<h4>Species: <%= @artist.species %></h4>
+<h4>Age: <%= @artist.age %></h4>
+<br />
+<h2>Songs</h2>
+<% @artist.songs.each do |song| %>
+  <%= render 'songs', { song: song } %>
+<% end %>
+<br />
+<%= link_to 'Add Song', new_artist_comment_path(@rtist), class: "ui button blue" %>
+<br />
+<br />
+<%= link_to 'Edit Artist', edit_billboard_artist_path([@billboard, @artist]) %> |
+<%= link_to 'Delete Artist', [@billboard, @artist], method: :delete %> |
+<%= link_to 'Back To Artist', billboard_artist_path(@billboad) %>

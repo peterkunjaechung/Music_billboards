@@ -1,0 +1,20 @@
+<h1 class="ui header">All Billboards</h1>
+<% @billboards.each do |billboard| %>
+
+<p>Top 100 US</p>
+<br></br>
+<p>Top 100 EU</p>
+<br></br>
+<p>Top 50 US</p>
+<br></br>
+<p>Top 50 EU</p>
+<br></br>
+<p>Top 10</p>
+<br></br>
+
+  <%= link_to "Show", billboard_path(billboard) %>
+  <%= link_to "Edit", edit_billboard_path(billboard) %>
+  <%= link_to "Delete", billboard_path(billboard), method: :delete %>
+<% end %>
+<br /></br>
+<%= link_to "New Billboard", new_billboard_path %>

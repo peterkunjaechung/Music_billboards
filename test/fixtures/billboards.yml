@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  top_100_us: MyString
+  top_100_eu: MyString
+  top_50_us: MyString
+  top_50_eu: MyString
+  top_10: MyString
+
+two:
+  top_100_us: MyString
+  top_100_eu: MyString
+  top_50_us: MyString
+  top_50_eu: MyString
+  top_10: MyString
